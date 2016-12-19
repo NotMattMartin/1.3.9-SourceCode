@@ -8,12 +8,12 @@
 
 team_name = 'Kparisi13' # Only 10 chars displayed.
 strategy_name = 'Win'
-strategy_description = 'Only betray if we got screwed over last time'
+strategy_description = 'Only betray if we got screwed over last time and the first time'
     
   
 def move(my_history, their_history, my_score, their_score):
     if len(my_history)==0:
-        return 'c'
+        return 'b'
     else:
         recent_round_them = their_history[-1]
         recent_round_me = my_history[-1]
